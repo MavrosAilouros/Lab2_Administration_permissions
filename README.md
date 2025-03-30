@@ -110,6 +110,16 @@ sudo systemctl status monitoreo-cambios.service
 /home/<user>/monitor.log
 ```
 
+> **Important:**  
+> Before starting the service, open `monitoreo-cambios.service` and replace the placeholder paths with your own:
+>
+> - `/path/to/ejercicio3.sh` → Absolute path to your `ejercicio3.sh` script  
+> - `/absolute/path/to/monitored/directory` → Directory you want to monitor  
+> - `/path/to/script/directory` → Directory where the script resides  
+>
+> These paths are located in the `ExecStart` and `WorkingDirectory` fields of the service file.
+
+
 Note: Make sure the `ExecStart` and `WorkingDirectory` paths inside the service file are valid for the user running the service.
 
 ---
