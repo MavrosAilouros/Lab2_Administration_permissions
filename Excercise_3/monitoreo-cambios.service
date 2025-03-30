@@ -4,8 +4,8 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/bin/bash /home/mavros_ailouros/Universidad/Clases/IE-0117/Laboratorio2/ejercicio3.sh /home/mavros_ailouros/Universidad/Clases/IE-0117/Laboratorio2
-WorkingDirectory=/home/mavros_ailouros/Universidad/Clases/IE-0117/Laboratorio2
+ExecStart=/bin/bash /path/to/ejercicio3.sh /absolute/path/to/monitored/directory
+WorkingDirectory=/path/to/script/directory
 Restart=always
 
 [Install]
